@@ -1,7 +1,7 @@
 <?php
 /*
     Plugin Name: ESGI
-    Description: Simple implementation of a nivo slideshow into WordPress
+    Description: Notre plugin pour faire les sliders
     Author: Adama - Nico - Florian
     Version: 1.0
 */
@@ -66,12 +66,12 @@ add_action('widgets_init', 'np_widgets_init');
 
 class np_Widget extends WP_Widget {
  
-    public function __construct() {
-        parent::__construct('np_Widget', 'ESGI Slideshow', array('description' => __('Notre Slideshow Widget', 'text_domain')));
+    function __construct() {
+        parent::__construct('np_Widget', 'ESGI Slideshow', array('description' => __('ESGI Slideshow Widget', 'text_domain')));
     }
 }
 
-public function form($instance) {
+function form($instance) {
     if (isset($instance['title'])) {
         $title = $instance['title'];
     }
@@ -85,14 +85,14 @@ public function form($instance) {
         </p>
     <?php
 }
-public function update($new_instance, $old_instance) {
+ function update($new_instance, $old_instance) {
     $instance = array();
     $instance['title'] = strip_tags($new_instance['title']);
  
     return $instance;
 }
 
-public function widget($args, $instance) {
+function widget($args, $instance) {
     extract($args);
     // the title
     $title = apply_filters('widget_title', $instance['title']);
