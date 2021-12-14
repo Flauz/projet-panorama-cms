@@ -2,7 +2,7 @@
 /*
 Plugin Name: Slider ESGI
 Plugin Uri: monplugin.me.com
-Author: Florian-Nicolas-Adama
+Author: Adama - Florian - Nicolas
 Author URI: alice.me.com
 Text Domain: monpluginlg
 Description: mon premier plugin sur Wordpress
