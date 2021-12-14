@@ -4,9 +4,9 @@ Plugin Name: Slider ESGI
 Plugin Uri: monplugin.me.com
 Author: Adama - Florian - Nicolas
 Author URI: alice.me.com
-Text Domain: monpluginlg
+Text Domain: monpluginlg 
 Description: mon premier plugin sur Wordpress
-Version: 1.0
+Version: 1.0.0
 */
 
 if( ! defined( 'ABSPATH' ) ) exit;
